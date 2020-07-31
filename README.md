@@ -16,12 +16,12 @@ And then target your output folder with your path variable during your `cf push`
 
 A UI that on it's home page displays the connection information and a list of suppliers queried from the test supplier database generated when you create a Snowflake account.
 
-![Application](/images/Application.png)
+![Application](/Images/Application.png)
 
 The Data seen on the home screen of the app should match the data in the Snowflake Console.
 
-![Snowflake](/images/Snowflake.png)
+![Snowflake](/Images/Snowflake.png)
 
 If you'd like to connect this repository to your own database edit the HomeController and the hardcoded values for the respective connection parameters.  If you'd like to utilize my connection parameters please reach out to me.
 
-![Parameters](/images/Parameters.png)
+![Parameters](/Images/Parameters.png)
