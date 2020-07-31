@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Supplier>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Suppliers</h1>
+    </div>
+</div>
+<h2>Connection Details</h2>
+<dl class="row">
+    <dt class="col-sm-2">
+        Host
+    </dt>
+    <dd class="col-sm-10">
+        @ViewBag.Host
+    </dd>
+
+    <dt class="col-sm-2">
+        Account
+    </dt>
+    <dd class="col-sm-10">
+        @ViewBag.Account
+    </dd>
+
+    <dt class="col-sm-2">
+        User
+    </dt>
+    <dd class="col-sm-10">
+        @ViewBag.User
+    </dd>
+
+    <dt class="col-sm-2">
+        Warehouse
+    </dt>
+    <dd class="col-sm-10">
+        @ViewBag.Warehouse
+    </dd>
+
+    <dt class="col-sm-2">
+        Database
+    </dt>
+    <dd class="col-sm-10">
+        @ViewBag.Database
+    </dd>
+
+    <dt class="col-sm-2">
+        Schema
+    </dt>
+    <dd class="col-sm-10">
+        @ViewBag.Schema
+    </dd>
+
+    <dt class="col-sm-2">
+        Role
+    </dt>
+    <dd class="col-sm-10">
+        @ViewBag.Role
+    </dd>
+</dl>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Address)</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => product.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => product.Address)</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
